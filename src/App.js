@@ -38,7 +38,7 @@ function App() {
       <h3>Latitude: {latitude}</h3>
       <h3>Longitude: {longitude}</h3>
       <h3>Location: {weather === undefined ? "" : weather.name}</h3>
-      <h3>temperature: {weather === undefined ? "" : Math.round(weather.main.temp - 273.15)}</h3>
+      <h3>Temperature: {weather === undefined ? "" : Math.round(weather.main.temp - 273.15)}</h3>
       <h3>Status: {weather === undefined ? "" : weather.weather.map(data => data.main)} - {weather === undefined ? "" : weather.weather.map(data => data.description)}</h3>
     </div>
   );
